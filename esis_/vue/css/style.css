@@ -1,0 +1,246 @@
+/*Alpha team 
+*Asky, Sam_Lint4, Mahi2, King_Dan*/
+*{
+	margin: 0px;
+	padding: 0;
+}
+
+/*Enveloppe*/
+#wrapper{
+	background: white;
+	width: 100%;
+	height: 100%;
+}
+/*End enveloppe*/
+
+/*Contenu*/
+#content{
+	top: -20px;
+	height: 1800px;
+	margin-left: 100px;
+	margin-right: 100px;
+	box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.7);
+}
+/*Fin contenu*/
+
+nav{
+	position: absolute;
+	width: 100%;
+	background: #030303;
+	background-color: rgba(0,0,0,1);
+	top: 130px;
+}
+/*Menu*/
+#menu, #menu ul{
+	margin: 0px;
+	padding:0px;
+	font-size:0px;
+}
+#menu{
+	margin-left: 130px;
+}
+#menu a{
+	padding-left:25px;
+	padding-right:30px;
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
+	line-height: 40px;
+	display: inline-block;
+	height: 40px;
+	font-family: 'trebuchet ms';
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+#menu li{
+	border-right:1px #555555 solid;
+	display: inline-block;
+	height: 38px;
+	-webkit-transition: background 0.4s linear;
+	-moz-transition: background 0.4s linear;
+	-o-transition: background 0.4s linear;
+	transition: background 0.4s linear;
+}
+#menu li:hover{
+	text-decoration:none;
+	color:#fff;
+	background:#0099cc;
+}
+#active {
+	text-decoration:none;
+	color:#fff;
+	background:#0099cc;
+}
+#menu ul{
+	display: none;
+}
+#menu li:last-child{
+	border-right: none;
+}
+
+/*Fin menu*/
+
+/*Banière*/
+#ban a{
+	text-decoration: none;
+	font-family: Arial;
+}
+#ban h4{
+	top: 40px;
+	margin-left: 125px;
+	text-decoration: none;
+	position: absolute;
+	color: #0099cc;
+}
+#ban p{
+	color: black;
+	top: 60px;
+	margin-left: 125px;
+	font-family: 'Century Gothic';
+	position: absolute;
+}
+/*Fin banière*/
+
+/*Utility --- Liens se trouvant en haut de la page*/
+#utility{
+	float: right;
+	margin-top: 0px;
+	margin-right: 15px;
+	position:relative;
+}
+#utility li{
+	border-right: 1px solid #0099cc;
+	display: inline;
+	text-decoration: none;
+	padding: 1px;
+}
+#utility li:last-child{
+	border-right: none;
+}
+#utility a{
+	padding: 10px;
+	font-family: 'trebuchet ms';
+	font-size: 14px;
+	color: #0099cc;
+	text-decoration: none;
+}
+#utility a:hover{
+	color: coral;
+}
+/*Fin utility*/
+
+/*Champ de recherche*/
+
+/*#recherche{
+	position: absolute;
+	margin-top: -34px;
+	margin-left: 1203px;
+}
+#recherche #forme #search{
+	height: 30px;
+	width: 30px;
+	background: url('../img/search.png');
+	color: black;
+	border:none;
+	outline: none;
+}
+#recherche #forme #search:focus{
+	margin-left: 0px;
+	margin-right: 5000px;
+	width: 200px;
+	position: absolute;
+}*/
+
+#formulaire{
+	float: right;
+	margin-top: -34px;
+	margin-right: 99px;
+}
+#search{
+	border: 0.2em solid #0099cc;
+	outline: none;
+	border-radius: 4px 0px 0px 4px;
+	width: 25px;
+	height: 26px;
+	background: url('../img/search.jpg') no-repeat;
+	text-align: center;
+	color: white;
+	transition: width 1s cubic-bezier(0,1.9,.66,0.4);;
+	-webkit-transition: width 1s cubic-bezier(0,1.9,.66,0.4);
+	-moz-transition: width 1s cubic-bezier(0,1.9,.66,0.4);
+	-ms-transition: width 1s cubic-bezier(0,1.9,.66,0.4);
+	-webkit-transition: width 1s cubic-bezier(0,1.9,.66,0.4);
+	/*transition: width $tl cubic-bezier(0,1.22,.66,1.39);*/
+}
+#search:focus{
+	width: 225px;
+	border-radius: 6px 0px 0px 6px;
+}
+
+/*Fin champ de recherche*/
+/*Slide*/
+
+#slide{
+	//width: 100%;
+	width: 1148px;
+	margin-top: 19px;
+	height: 550px;
+	background-color: #0099cc;
+}
+/*Fin du slide*/
+
+/*Filières*/
+
+/*  Les Bloques  */
+.lien
+{
+	display: inline-block;
+	text-decoration:none;
+	width:150px;
+	height:90px;
+	margin-left:106px;
+	margin-top:40px;
+	position:relative;	
+
+}
+
+.lien a
+{
+	text-decoration:none;
+	
+}
+		
+		
+/* Ici c'est la partie du figure */
+figure
+{
+	position: relative;
+	width: 250px;
+	height: 260px;
+	border: 1px solid #eaeaea;
+	border-radius: 4px;
+	margin: 4px;
+	overflow: hidden;
+	margin-left:-50px;
+}
+
+figcaption
+{
+	position: relative;
+	top: -2px;
+	background: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.5);
+	-webkit-transition: top 1s;
+	-moz-transition: top 1s;
+	-ms-transition: top 1s;
+	-o-transition:top 1s;
+	transition: 1s;
+}
+
+/* Au survol de l'image le TOP Diminue */
+figure:hover figcaption
+{
+	top: -105px;
+	color: white;
+
+}
